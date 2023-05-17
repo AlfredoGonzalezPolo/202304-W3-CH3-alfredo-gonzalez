@@ -22,6 +22,12 @@ export class PetsList extends Component {
     return element;
   }
 
+  handleDelete(event: Event) {
+    const element = event.target as HTMLSpanElement;
+    this.pets = this.pets.filter((item) => item.id !== element.dataset.id);
+    this.render();
+  }
+
   createTemplate() {
     const list = this.pets
       .map(
@@ -31,5 +37,6 @@ export class PetsList extends Component {
             <span>Dueño: ${item.owner}</span>`
       )
       .join('');
+    return `<ul>${list}</ul>`;
   }
 }
