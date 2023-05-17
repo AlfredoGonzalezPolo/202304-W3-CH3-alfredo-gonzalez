@@ -10,4 +10,8 @@ export abstract class Component {
     this.element = parentElement.lastElementChild!;
     return this.element;
   }
+
+  cleanHtml(selector: string) {
+    this.element = document.querySelector(selector) as Element;
+  }
 }
