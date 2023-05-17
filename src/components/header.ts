@@ -9,7 +9,7 @@ export class Header extends Component {
 
   createTemplate() {
     return `<header>
-<h1>MY PETS :)
+<h1>${this.title}
 </h1>
 </header>`;
   }
