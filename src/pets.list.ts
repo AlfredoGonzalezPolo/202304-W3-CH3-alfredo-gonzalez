@@ -1,6 +1,7 @@
 import { getMockPets } from './models/mocks.pets';
 import { Pet } from './pet';
 import { Component } from './components/components';
+import './pet.list.css';
 
 export class PetsList extends Component {
   pets: Pet[];
