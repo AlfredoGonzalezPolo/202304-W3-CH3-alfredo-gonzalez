@@ -1,4 +1,5 @@
 import { Component } from './components';
+import './header.css';
 
 export class Header extends Component {
   constructor(selector: string, public title: string) {
