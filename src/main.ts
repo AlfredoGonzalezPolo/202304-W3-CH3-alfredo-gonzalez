@@ -12,7 +12,8 @@ export class Main extends Component {
   createTemplate() {
     return `
     <main>
-
+<ul>
+<li></li></ul>
     </main>
     `;
   }
